@@ -63,7 +63,7 @@ const links = [
 
 export function TataprofProfile() {
   return (
-    <main className="relative flex min-h-svh items-center justify-center overflow-hidden bg-[#090909] px-4 py-8 text-white sm:px-6">
+    <main className="relative flex min-h-svh items-center justify-center overflow-hidden bg-[#090909] px-4 py-4 text-white sm:px-6 sm:py-8">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-52 left-1/2 size-[34rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(185,168,135,0.13),transparent_68%)] blur-2xl" />
         <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.025),transparent_35%,rgba(255,255,255,0.015))]" />
@@ -72,8 +72,8 @@ export function TataprofProfile() {
 
       <section className="relative w-full max-w-[420px] overflow-hidden rounded-[30px] border border-white/[0.11] bg-[#111110]/90 shadow-[0_32px_100px_rgba(0,0,0,0.72)] backdrop-blur-xl">
         <div aria-hidden="true" className="h-px w-full bg-gradient-to-r from-transparent via-[#b9a887]/70 to-transparent" />
-        <div className="px-7 pb-7 pt-8 sm:px-9 sm:pb-8 sm:pt-9">
-          <div className="mb-7 flex items-center justify-between">
+        <div className="px-7 pb-5 pt-6 sm:px-9 sm:pb-8 sm:pt-9">
+          <div className="mb-5 flex items-center justify-between">
             <a href="#profile" aria-label="TataProf home" className="font-serif text-[17px] tracking-[0.18em] text-white">TATAPROF</a>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.035] px-2.5 py-1.5 text-[9px] font-medium uppercase tracking-[0.17em] text-white/50">
               <span className="size-1.5 rounded-full bg-[#b9a887] shadow-[0_0_8px_rgba(185,168,135,.8)]" />
@@ -82,7 +82,7 @@ export function TataprofProfile() {
           </div>
 
           <div id="profile" className="flex flex-col items-center text-center">
-            <div className="relative mb-5 flex size-[108px] items-center justify-center rounded-full border border-[#b9a887]/60 bg-[radial-gradient(circle_at_30%_20%,#38352e,#191817_48%,#0c0c0b)] p-1 shadow-[0_0_0_5px_rgba(185,168,135,0.06),0_12px_40px_rgba(0,0,0,.5)]">
+            <div className="relative mb-4 flex size-[92px] items-center justify-center rounded-full border border-[#b9a887]/60 bg-[radial-gradient(circle_at_30%_20%,#38352e,#191817_48%,#0c0c0b)] p-1 shadow-[0_0_0_5px_rgba(185,168,135,0.06),0_12px_40px_rgba(0,0,0,.5)]">
               <div className="flex size-full items-center justify-center rounded-full border border-white/[0.12] bg-black/20">
                 <span className="font-serif text-[35px] tracking-[-0.08em] text-[#e5ded1]">TP</span>
               </div>
@@ -94,22 +94,22 @@ export function TataprofProfile() {
             <p className="mb-2 text-[9px] font-medium uppercase tracking-[0.32em] text-[#b9a887]">Tap. Connect. Experience.</p>
             <h1 className="font-serif text-[38px] leading-none tracking-[-0.035em] text-[#f5f2ec]">TataProf</h1>
             <p className="mt-2.5 text-[12px] tracking-[0.04em] text-white/50">Smart NFC Solutions</p>
-            <p className="mt-4 max-w-[260px] text-[13px] leading-6 text-white/65">
+            <p className="mt-3 max-w-[260px] text-[13px] leading-5 text-white/65">
               Thoughtful connections, made with a single tap.
             </p>
           </div>
 
-          <div className="mt-7 flex items-center gap-3" aria-hidden="true">
+          <div className="mt-5 flex items-center gap-3" aria-hidden="true">
             <span className="h-px flex-1 bg-white/[0.09]" />
             <span className="text-[9px] uppercase tracking-[0.22em] text-white/35">Connect with us</span>
             <span className="h-px flex-1 bg-white/[0.09]" />
           </div>
 
-          <div className="mt-4 flex flex-col gap-2.5">
+          <div className="mt-3 flex flex-col gap-2">
             <button
               type="button"
               onClick={saveContact}
-              className="group flex min-h-[54px] w-full items-center justify-between rounded-[15px] border border-[#ded8cb] bg-[#ded8cb] px-4 text-left text-[#141311] transition duration-200 hover:border-white hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111110] active:scale-[0.99]"
+              className="group flex min-h-[50px] w-full items-center justify-between rounded-[15px] border border-[#ded8cb] bg-[#ded8cb] px-4 text-left text-[#141311] transition duration-200 hover:border-white hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111110] active:scale-[0.99]"
             >
               <span className="flex items-center gap-3">
                 <Download aria-hidden="true" size={17} strokeWidth={1.7} />
@@ -124,7 +124,7 @@ export function TataprofProfile() {
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel={href.startsWith('http') ? 'noreferrer' : undefined}
-                className="group flex min-h-[54px] items-center justify-between rounded-[15px] border border-white/[0.12] bg-white/[0.025] px-4 text-left transition duration-200 hover:border-white/50 hover:bg-white hover:text-[#111110] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111110] active:scale-[0.99]"
+                className="group flex min-h-[50px] items-center justify-between rounded-[15px] border border-white/[0.12] bg-white/[0.025] px-4 text-left transition duration-200 hover:border-white/50 hover:bg-white hover:text-[#111110] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887] focus-visible:ring-offset-2 focus-visible:ring-offset-[#111110] active:scale-[0.99]"
               >
                 <span className="flex min-w-0 items-center gap-3">
                   <Icon aria-hidden="true" size={17} strokeWidth={1.6} className="shrink-0 text-[#c9c2b5]/80 transition-colors group-hover:text-[#111110]" />
@@ -138,14 +138,14 @@ export function TataprofProfile() {
             ))}
           </div>
 
-          <div className="mt-6 flex items-center justify-center gap-3" aria-label="Social media">
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex size-10 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
+          <div className="mt-4 flex items-center justify-center gap-3" aria-label="Social media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex size-9 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="size-[17px]" stroke="currentColor" strokeWidth="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.8" r=".8" fill="currentColor" stroke="none" /></svg>
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook" className="flex size-10 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook" className="flex size-9 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
               <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4 fill-current"><path d="M13.4 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V13h2.7v8h3.2Z" /></svg>
             </a>
-            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok" className="flex size-10 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
+            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok" className="flex size-9 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#b9a887]/60 hover:bg-white/[0.06] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b9a887]">
               <Music2 aria-hidden="true" size={17} strokeWidth={1.6} />
             </a>
           </div>
