@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'TataProf | Tap. Connect. Experience.',
-  description: 'TataProf smart NFC solutions — thoughtful connections, made with a single tap.',
+  title: 'TataProf | Digital profiles for every introduction',
+  description: 'Create polished personal and business profiles, each with its own shareable link for NFC cards, QR codes, and everyday introductions.',
   generator: 'v0.app',
   icons: {
     icon: [
